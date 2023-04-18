@@ -4,8 +4,8 @@ jobs:
       docker:
            -image:cimg/ruby: 2.6.8 
              auth:
-               username: mydockerhub-user
-               password: $DOCKERHUB_PASSWORD
+             username: mydockerhub-user
+             password: $DOCKERHUB_PASSWORD
 steps:
    - checkout 
    - run: echo "A first hello" This prints "A first hello" to stdout.
