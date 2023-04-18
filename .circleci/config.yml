@@ -2,7 +2,7 @@ version: 2
 jobs: 
    one: 
        docker:
-            -image: cimg/ruby: 2.6.8 
+            -image: cing/ruby: 2.6.8 
              auth:
                   username: mydockerhub-user
                   password: $DOCKERHUB_PASSWORD
@@ -12,7 +12,7 @@ steps:
    - run: sleep 25
 two:
      docker:
-          - image: cimg/ruby: 3.0.2
+          - image: cing/ruby: 3.0.2
             auth:
                  username: mydockerhub-user
                  password: $DOCKERHUB PASSWORD
